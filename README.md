@@ -10,6 +10,8 @@
 
 Bu yerda men yangi o'rgangan "HTML" teglari bo'yicha loyiha yaratim. Bu loyihada siz kitoblar haqida malumot kiritish, o'zgartirish va unlarni o'chirib tashlasangiz bo'ladi.
 
+Yana men bu loyihaga sign_up va login ni qo'shdim.Endi siz registratsiyadan o'tib keyin bemalol login da nomingiz va parolingiz kirtib ishlatsangiz bo'ladi. 
+
 ### Installation
 
 ```bash and another

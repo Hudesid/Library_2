@@ -11,14 +11,14 @@
 <body>
     <div class="container">
         <h1>Library</h1>
-        <a href="{% url 'add' %}" class="btn btn-primary add-book">Add Book</a>
+        <a href="{% url 'library:add' %}" class="btn btn-primary add-book">Add Book</a>
             <ol>
                 {% for book in books %}
                 <li>
-                    <span class="book-title"><a href="{% url 'detail' pk=book.pk %}">{{ book.title }}</a></span>
-                    <a href="{% url 'update' pk=book.pk %}"><i class="bi bi-pencil-square"></i></a>
+                    <span class="book-title"><a href="{% url 'library:detail' pk=book.pk %}">{{ book.title }}</a></span>
+                    <a href="{% url 'library:update' pk=book.pk %}"><i class="bi bi-pencil-square"></i></a>
                     &emsp;
-                    <a href="{% url 'delete' pk=book.pk %}"><i class="bi bi-trash-fill"></i></a>
+                    <a href="{% url 'library:delete' pk=book.pk %}"><i class="bi bi-trash-fill"></i></a>
                 </li>
                 {% endfor %}
             </ol>

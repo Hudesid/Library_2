@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>Library</h1>
-        <a href="{% url 'library:add' %}" class="btn btn-primary add-book">Add Book</a>
+        <a href="{% url 'library:add' %}" class="btn btn-primary add-book"><strong>+</strong> Add Book</a>
             <ol>
                 {% for book in books %}
                 <li>
@@ -23,6 +23,8 @@
                 {% endfor %}
             </ol>
     </div>
+    <br>
+    <a class="btn btn-primary" href="{% url 'library:logout' %}">Logout</a>
     <footer>
         <p>Powered by <a href="https://www.linkedin.com/in/abdulla-dev/">Abdulla Abdukulov</a></p>
     </footer>
